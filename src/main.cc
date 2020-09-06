@@ -1,9 +1,12 @@
 #include<iostream>
-#include "Character.hh" 
+//#include "Character.hh" 
+#include "Hero.hh"
 
 int main()
 {
-    Character* character1{new Character(5, 3, 1, 2, 3)};
+    Hero* hero1{new Hero(5, 3, 1, 2, 3)};
+
+    /* Character* character1{new Character(5, 3, 1, 2, 3)};
     std::cout << "Character info:" << std::endl;
     std::cout << "Health: " << character1->GetHealth() << std::endl;
     std::cout << "Exp: " << character1->GetExp() << std::endl;
@@ -14,7 +17,7 @@ int main()
     character1->GetDamage(10);
     std::cout << "Health: " << character1->GetHealth() << std::endl;
     std::cout << "Lore: " << character1->GetLore() << std::endl;
-
+    */
     std::cin.get();
     return 0;
 }
