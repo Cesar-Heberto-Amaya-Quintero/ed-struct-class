@@ -3,10 +3,14 @@
 class Hero : public Character
 {
 private:
-    
+    uint32_t level;
+    const bool isBad{false};
+    std::string* skills;
 public:
-    Hero(short int health, uint32_t strength, uint32_t exp, short int luck, uint32_t speed); //constructor
+    Hero(short int, uint32_t , uint32_t , short int , uint32_t, uint32_t, std::string*); //constructor
     ~Hero(); //destructor
+    std::string* GetSkill() const;
+    uint32_t GetLevel() const;
 };
 
 
